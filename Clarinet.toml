@@ -1,0 +1,52 @@
+[project]
+name = "customizable-nfts"
+authors = []
+description = ""
+telemetry = false
+requirements = []
+boot_contracts = ["pox", "costs-v2", "bns"]
+
+[project.cache_location]
+path = ".requirements"
+[contracts.backgrounds]
+path = "contracts/backgrounds.clar"
+
+[contracts.cars]
+path = "contracts/cars.clar"
+
+[contracts.conversion]
+path = "contracts/conversion.clar"
+
+[contracts.customizable-nfts]
+path = "contracts/customizable-nfts.clar"
+
+[contracts.heads]
+path = "contracts/heads.clar"
+
+[contracts.miami-degens]
+path = "contracts/miami-degens.clar"
+
+[contracts.nft-trait]
+path = "contracts/nft-trait.clar"
+
+[contracts.nyc-degens]
+path = "contracts/nyc-degens.clar"
+
+[contracts.rims]
+path = "contracts/rims.clar"
+
+[contracts.stacks-degens]
+path = "contracts/stacks-degens.clar"
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
